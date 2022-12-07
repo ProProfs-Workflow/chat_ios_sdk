@@ -22,14 +22,10 @@ struct OperatorMessage: View {
                 } else {
                     AsyncImage(url: URL(string: "\(messageImageUrl())\(account_id)/\(message.message)"), scale: 7) { image in
                                 image
-//                                    .resizable()
-//                                    .aspectRatio(contentMode: .fill)
                                     
                             } placeholder: {
                                 ProgressView()
                             }
-//                            .frame(width: 250, height: 250)
-//                    AsyncImage(url: URL(string: "\(messageImageUrl())\(account_id)/\(message.message)") , scale: 7)
                 }
             }.background(
                 RoundedCornersShape(corners: [.topLeft, .topRight, .bottomRight], radius: 20)
