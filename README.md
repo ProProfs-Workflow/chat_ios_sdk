@@ -26,17 +26,12 @@ struct ContentView: View {
         NavigationStack{
             ZStack{
                 List{
-                        Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry")
-                           
+                        Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry")                    
                     }
             }.overlay(alignment:.bottomTrailing, content: {
-                
               ProProfsChatIosSDK(site_id: "api-key")
                     .padding(.trailing,30)
                     .padding(.bottom,30)
-                  
-                
-
             })
         }
     }
