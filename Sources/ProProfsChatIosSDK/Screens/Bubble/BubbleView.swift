@@ -33,8 +33,6 @@ struct BubbleView: View {
             RoundedCornersShape(corners: chatStyle.embedded_window ==  BubbleType.BAR.rawValue ? [.topLeft, .topRight] : [.topLeft, .topRight, .bottomLeft, .bottomRight], radius: chatStyle.embedded_window ==  BubbleType.BAR.rawValue ? 10 : 20)
                 .fill(Color(hexString: chatStyle.chead_color))
         )
-//        .background(Color(hexString: chatStyle.chead_color))
-//        .cornerRadius(30)
         .overlay(alignment: .topTrailing, content: {
             HStack{
                 Circle()

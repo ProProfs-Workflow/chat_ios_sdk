@@ -21,11 +21,10 @@ struct OperatorMessage: View {
                         .padding(15)
                 } else {
                     AsyncImage(url: URL(string: "\(messageImageUrl())\(account_id)/\(message.message)"), scale: 7) { image in
-                                image
-                                    
-                            } placeholder: {
-                                ProgressView()
-                            }
+                        image
+                    } placeholder: {
+                        ProgressView()
+                    }
                 }
             }.background(
                 RoundedCornersShape(corners: [.topLeft, .topRight, .bottomRight], radius: 20)
@@ -36,8 +35,6 @@ struct OperatorMessage: View {
                     .foregroundColor(Color.gray)
                     .font(.system(size: 12))
             }
-           
-           
         }
     }
 }

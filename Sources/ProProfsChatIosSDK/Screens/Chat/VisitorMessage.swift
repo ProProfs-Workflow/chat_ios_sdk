@@ -23,14 +23,10 @@ struct VisitorMessage: View {
                         .padding(15)
                 } else {
                     AsyncImage(url: URL(string: "\(messageImageUrl())\(account_id)/\(message.message)"), scale: 7) { image in
-                        image
-                        //                                    .resizable()
-                        //                                    .aspectRatio(contentMode: .fill)
-                        
+                        image                        
                     } placeholder: {
                         ProgressView()
                     }
-                    //                    AsyncImage(url: URL(string: "\(messageImageUrl())\(account_id)/\(message.message)") , scale: 4)
                 }
             }.background(
                 RoundedCornersShape(corners: [.topLeft, .topRight, .bottomLeft], radius: 20)
