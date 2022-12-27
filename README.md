@@ -8,8 +8,9 @@
 ```
 Step 1: Select File -> Add Packages...
 Step 2: Search url https://github.com/ProProfs-Workflow/chat_ios_sdk
-Step 3: Click the button "Add Package" 
-Step 4: Check if the package is added at Target -> General -> Framework, Libraries, and Embedded Content
+Step 3: Select Depedency Rule -> Exact Version -> 0.0.1
+Step 4: Click the button "Add Package" 
+Step 5: Check if the package is added at Target -> General -> Framework, Libraries, and Embedded Content
 ```
 ## Step 2. Code Integration
 ```

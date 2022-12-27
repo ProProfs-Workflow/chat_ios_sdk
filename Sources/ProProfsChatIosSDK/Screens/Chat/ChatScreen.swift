@@ -63,7 +63,6 @@ public struct ChatScreen: View {
                                 .onChange(of: messages){ new in
                                     value.scrollTo("scroll_to_last_message")
                                 }
-                            
                         }
                     }  .padding(.leading,15)
                         .padding(.trailing,15)
@@ -178,7 +177,6 @@ public struct ChatScreen: View {
     
     func updateVistorMessageStatus(messageStatusList:[VisitorMessageStatus]){
         let visitor_unseen_messages = messages.filter{ $0.msg_status == "0" && $0.v_o == "v"}
-        
         if(!visitor_unseen_messages.isEmpty){
             for(_, message) in visitor_unseen_messages.enumerated() {
                 let seen_message_sno = String(messageStatusList.first{$0.sno == message.sno && $0.msg_status == "2"}?.sno ?? "")

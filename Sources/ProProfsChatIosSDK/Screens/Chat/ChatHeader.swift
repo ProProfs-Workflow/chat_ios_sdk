@@ -31,7 +31,6 @@ struct ChatHeader: View {
                         .frame(width: 60, height: 60, alignment: .center)
                         .clipShape(Circle())
                 }
-                
             }
             
             VStack(alignment: .leading,spacing: 5){
